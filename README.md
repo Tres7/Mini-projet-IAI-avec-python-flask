@@ -1,5 +1,4 @@
-# Mini-projet-IAI
-IAI MINI-PROJET GESTION DES LIVRES D'UNE BIBLIOTHEQUE
+# IAI MINI-PROJET GESTION DES LIVRES D'UNE BIBLIOTHEQUE
 -Lister tous les livres: Cela nous permettra de lister tous les livres présents dans la bibliothèque
 Route: /GET/livres
 Résultat de la requête:
