@@ -1,7 +1,9 @@
 # IAI MINI-PROJET GESTION DES LIVRES D'UNE BIBLIOTHEQUE
--Lister tous les livres: Cela nous permettra de lister tous les livres présents dans la bibliothèque
+# Voici les fonctionnalités
+# *GESTION DES LIVRES*
+# 1- Lister tous les livres: Cela nous permettra de lister tous les livres présents dans la bibliothèque
 Route: /GET/livres
-Résultat de la requête:
+# Résultat de la requête:
  "livres": 
         {
             "Auteur": "Dale Carnegie",
@@ -21,9 +23,8 @@ Résultat de la requête:
             "categories_id": 1,
             "id": 12
         }
--Modifier un livre: nous permet de modifier un livre en entrant son id
-Pour pouvoir faire cette modification, plus besoin de taper toutes les références
-nous taperons juste les références de ce que nous voulons modifier
+# 2 - Modifier un livre: cette fonctionnalité permet de modifier un livre en entrant en utilsant son id
+Pour pouvoir faire cette modification, plus besoin d'entrer toutes les références. Il suffira juste d'entrer les références de ce que nous voulons modifier.
 route: /PATCH/livres/id
 résultat:
 {
@@ -40,9 +41,9 @@ résultat:
     "updated_book_Id": 7
 } 
 Conseil: Vérifiez la requête précédente. Vous verrez que le titre du livre a changé
--Supprimer un livre: Suppression d'un livre juste en entrant son id
+# 3 - Supprimer un livre: Suppression d'un livre juste en entrant son id
 route: /DELETE/livres/id
-Résultat:
+# Résultat de la requête:
 "livres": 
         {
             "Auteur": "Dale Carnegie",
@@ -62,7 +63,7 @@ Résultat:
             "categories_id": 1,
             "id": 13
         }
--Chercher un livre: Recherche avec son id
+# 4 - Chercher un livre: Recherche avec son id
 route: /GET/livres/id
 {
     "researched_Id": 12,
@@ -78,7 +79,7 @@ route: /GET/livres/id
     "success": true,
     "total": 6
 }
--Enregistrer un livre: Enregistrer un livre en écrivant toutes les références
+# 5 - Enregistrer un livre: Enregistrer un livre en écrivant toutes les références
 route: /POST/livres
 Résultat:
 {
@@ -93,10 +94,10 @@ Résultat:
             "id": 19
         }
 
-GESTION DES CATEGORIES
--la liste des catégories: 
+# *GESTION DES CATEGORIES*
+# 1- la liste des catégories: 
 route: /GET/categories
-résultat:
+# Résultat de la requêtes:
 "categories": 
         {
             "Categorie": "Ol",
@@ -110,9 +111,9 @@ résultat:
             "Categorie": "Narratif",
             "id": 7
         }
--Donner la liste d'une catégorie: permet de resortir les livres d'une catégorie entrée grâce à son id
+# 2 - Donner la liste d'une catégorie: permet de resortir les livres d'une catégorie entrée grâce à son id
 route:/GET/categories/1/livres
-résultat:
+# Résultat de la requête:
 "books": 
         {
             "Auteur": "Dale Carnegie",
@@ -150,9 +151,9 @@ résultat:
             "categories_id": 1,
             "id": 6
         }
--modifier le libellé d'une catégorie
+# 3- modifier le libellé d'une catégorie
 route: /PATCH/categories/id
-résultat:
+# Résultat de la requête:
 "success": true,
     "total": 6,
     "updated_category": {
@@ -172,9 +173,9 @@ résultat:
     "success": true,
     "total remaining": 5
 
--Enregistrer une nouvelle catégorie
+# 4- Enregistrer une nouvelle catégorie
 route: /POST/categories
-résultat:
+# Résultat de la requête:       
        {
             "Categorie": "Epistolaires",
             "id": 12
@@ -182,9 +183,9 @@ résultat:
     "created_id": 12,
     "success": true,
     "total": 6
--Chercher une catégorie par son id
+# 5 - Chercher une catégorie par son id
 route: /GET/categories/id
-résultat:
+# Résultat de la requête:
 "researched_Id": 12,
     "researched_category": {
         "Categorie": "Epistolaires",
