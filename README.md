@@ -1,5 +1,5 @@
 # IAI MINI-PROJET GESTION DES LIVRES D'UNE BIBLIOTHEQUE
-# Voici les fonctionnalités
+# Fonctionnalités
 # *GESTION DES LIVRES*
 # 1- Lister tous les livres: Cela nous permettra de lister tous les livres présents dans la bibliothèque
 Route: /GET/livres
